@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Aero Vista Global</title>
+    <meta name="description" content="Explore our comprehensive aviation services including pilot training, aircraft maintenance, aviation consulting, and safety training programs.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="/placeholder.svg?height=40&width=120" alt="Aero Vista Global Logo" class="h-10">
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 transition duration-300">About</a>
+                    <a href="services.html" class="text-blue-600 font-semibold">Services</a>
+                    <a href="team.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Team</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Gallery</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Blog</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+                    <a href="careers.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">Careers</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+                <a href="services.html" class="block py-2 text-blue-600 font-semibold">Services</a>
+                <a href="team.html" class="block py-2 text-gray-700 hover:text-blue-600">Team</a>
+                <a href="gallery.html" class="block py-2 text-gray-700 hover:text-blue-600">Gallery</a>
+                <a href="blog.html" class="block py-2 text-gray-700 hover:text-blue-600">Blog</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+                <a href="careers.html" class="block py-2 text-gray-700 hover:text-blue-600">Careers</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Our Services</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto">Comprehensive aviation solutions tailored to meet your professional needs</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">What We Offer</h2>
+                <p class="text-xl text-gray-600">Professional aviation services designed to elevate your career</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Pilot Training -->
+                <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-plane text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Pilot Training</h3>
+                    <p class="text-gray-600 mb-6">Comprehensive pilot training programs from PPL to ATPL, including type ratings and simulator training.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Private Pilot License (PPL)</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Commercial Pilot License (CPL)</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Airline Transport Pilot License (ATPL)</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Type Rating Courses</li>
+                    </ul>
+                    <a href="contact.html" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
+                </div>
+
+                <!-- Aircraft Maintenance -->
+                <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-wrench text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Aircraft Maintenance</h3>
+                    <p class="text-gray-600 mb-6">Professional aircraft maintenance training and certification programs for aspiring engineers.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>AME License Training</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Category A, B1, B2 Certifications</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Avionics Training</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Practical Workshops</li>
+                    </ul>
+                    <a href="contact.html" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
+                </div>
+
+                <!-- Aviation Consulting -->
+                <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Aviation Consulting</h3>
+                    <p class="text-gray-600 mb-6">Strategic consulting services for airlines, airports, and aviation businesses.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Operational Efficiency</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Safety Management Systems</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Regulatory Compliance</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Business Development</li>
+                    </ul>
+                    <a href="contact.html" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
+                </div>
+
+                <!-- Safety Training -->
+                <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Safety Training</h3>
+                    <p class="text-gray-600 mb-6">Comprehensive safety training programs for aviation professionals and organizations.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Dangerous Goods Training</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Ground Handling Safety</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Emergency Response</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>SMS Implementation</li>
+                    </ul>
+                    <a href="contact.html" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
+                </div>
+
+                <!-- Cabin Crew Training -->
+                <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Cabin Crew Training</h3>
+                    <p class="text-gray-600 mb-6">Professional cabin crew training programs with international standards and certifications.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Initial Cabin Crew Training</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Recurrent Training</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Emergency Procedures</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Customer Service Excellence</li>
+                    </ul>
+                    <a href="contact.html" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
+                </div>
+
+                <!-- Ground Operations -->
+                <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Ground Operations</h3>
+                    <p class="text-gray-600 mb-6">Training programs for ground handling, airport operations, and cargo management.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Ground Handling Training</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Airport Operations</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cargo Operations</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Ramp Safety</li>
+                    </ul>
+                    <a href="contact.html" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Methodology -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Training Methodology</h2>
+                <p class="text-xl text-gray-600">A proven approach to aviation education</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="/placeholder.svg?height=400&width=600" alt="Training Methodology" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="font-bold">1</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Theoretical Foundation</h3>
+                                <p class="text-gray-600">Comprehensive classroom instruction covering all theoretical aspects with experienced instructors.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="font-bold">2</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Practical Training</h3>
+                                <p class="text-gray-600">Hands-on experience with real aircraft, simulators, and modern training equipment.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="font-bold">3</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Assessment & Certification</h3>
+                                <p class="text-gray-600">Regular assessments and internationally recognized certifications upon completion.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="font-bold">4</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Career Support</h3>
+                                <p class="text-gray-600">Ongoing career guidance and placement assistance to help you achieve your aviation goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">World-Class Facilities</h2>
+                <p class="text-xl text-gray-600">State-of-the-art infrastructure for superior learning experience</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Flight Simulators" class="rounded-lg shadow-lg mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Flight Simulators</h3>
+                    <p class="text-gray-600">Advanced flight simulators for realistic training experience</p>
+                </div>
+                
+                <div class="text-center">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Classrooms" class="rounded-lg shadow-lg mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Modern Classrooms</h3>
+                    <p class="text-gray-600">Air-conditioned classrooms with latest audio-visual equipment</p>
+                </div>
+                
+                <div class="text-center">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Workshop" class="rounded-lg shadow-lg mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Maintenance Workshop</h3>
+                    <p class="text-gray-600">Fully equipped workshop for hands-on maintenance training</p>
+                </div>
+                
+                <div class="text-center">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Library" class="rounded-lg shadow-lg mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Aviation Library</h3>
+                    <p class="text-gray-600">Comprehensive collection of aviation books and resources</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Start Your Aviation Journey?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Choose from our comprehensive range of aviation services and take the first step towards your dream career</p>
+            <div class="space-x-4">
+                <a href="contact.html" class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-semibold transition duration-300">Get Started</a>
+                <a href="careers.html" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold transition duration-300">View Opportunities</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <img src="/placeholder.svg?height=40&width=120" alt="Aero Vista Global" class="h-10 mb-4">
+                    <p class="text-gray-400 mb-4">Leading the future of aviation through innovation, excellence, and global partnerships.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="team.html" class="text-gray-400 hover:text-white transition duration-300">Our Team</a></li>
+                        <li><a href="careers.html" class="text-gray-400 hover:text-white transition duration-300">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Pilot Training</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Aircraft Maintenance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Aviation Consulting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Safety Training</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-envelope mr-2"></i> contact@aerovistaglobal.com</p>
+                        <p><i class="fas fa-phone mr-2"></i> +1 (234) 567-8900</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> Mumbai, India</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2024 Aero Vista Global. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="privacy.html" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Widget -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/1234567890?text=Hello%20Aero%20Vista%20Global,%20I%20would%20like%20to%20know%20more%20about%20your%20services" 
+           target="_blank" 
+           class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition duration-300 flex items-center justify-center">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

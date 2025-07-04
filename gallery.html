@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Aero Vista Global</title>
+    <meta name="description" content="Explore our gallery showcasing training facilities, aircraft, events, and achievements at Aero Vista Global.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="/placeholder.svg?height=40&width=120" alt="Aero Vista Global Logo" class="h-10">
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 transition duration-300">About</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Services</a>
+                    <a href="team.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Team</a>
+                    <a href="gallery.html" class="text-blue-600 font-semibold">Gallery</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Blog</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+                    <a href="careers.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">Careers</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-blue-600">Services</a>
+                <a href="team.html" class="block py-2 text-gray-700 hover:text-blue-600">Team</a>
+                <a href="gallery.html" class="block py-2 text-blue-600 font-semibold">Gallery</a>
+                <a href="blog.html" class="block py-2 text-gray-700 hover:text-blue-600">Blog</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+                <a href="careers.html" class="block py-2 text-gray-700 hover:text-blue-600">Careers</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Gallery</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto">Explore our world-class facilities, training programs, and memorable moments</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="gallery-filter active bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300" data-filter="all">All</button>
+                    <button class="gallery-filter bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-filter="facilities">Facilities</button>
+                    <button class="gallery-filter bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-filter="training">Training</button>
+                    <button class="gallery-filter bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-filter="aircraft">Aircraft</button>
+                    <button class="gallery-filter bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-filter="events">Events</button>
+                    <button class="gallery-filter bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-filter="graduation">Graduation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="pb-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
+                <!-- Facilities -->
+                <div class="gallery-item facilities cursor-pointer" onclick="openModal('/placeholder.svg?height=600&width=800', 'Modern Flight Simulator', 'State-of-the-art flight simulator for realistic training experience')">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Flight Simulator" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 hover:opacity-100 transition duration-300"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-semibold">Flight Simulator</h3>
+                            <p class="text-gray-300 text-sm">Advanced training facility</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item facilities cursor-pointer" onclick="openModal('/placeholder.svg?height=600&width=800', 'Modern Classroom', 'Air-conditioned classrooms with latest audio-visual equipment')">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Classroom" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 hover:opacity-100 transition duration-300"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-semibold">Modern Classroom</h3>
+                            <p class="text-gray-300 text-sm">Interactive learning environment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item facilities cursor-pointer" onclick="openModal('/placeholder.svg?height=600&width=800', 'Maintenance Workshop', 'Fully equipped workshop for hands-on maintenance training')">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Workshop" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 hover:opacity-100 transition duration-300"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-semibold">Maintenance Workshop</h3>
+                            <p class="text-gray-300 text-sm">Hands-on training facility</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training -->
+                <div class="gallery-item training cursor-pointer" onclick="openModal('/placeholder.svg?height=600&width=800', 'Pilot Training Session', 'Students learning flight procedures with experienced instructors')">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Pilot Training" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 hover:opacity-100 transition duration-300"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-semibold">Pilot Training Session</h3>
+                            <p class="text-gray-300 text-sm">Practical flight training</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item training cursor-pointer" onclick="openModal('/placeholder.svg?height=600&width=800', 'Maintenance Training', 'Students working on aircraft engines under expert supervision')">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Maintenance Training" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 hover:opacity-100 transition duration-300"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-semibold">Maintenance Training</h3>
+                            <p class="text-gray-300 text-sm">Hands-on engine work</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item training cursor-pointer" onclick="openModal('/placeholder.svg?height=600&width=800', 'Cabin Crew Training', 'Professional cabin crew training in progress')">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Cabin Crew Training" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 hover:opacity-100 transition duration-300"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-semibold">Cabin Crew Training</h3>
+                            <p class="text-gray-300 text-sm">Service excellence training</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aircraft -->
+                <div class="gallery-item aircraft cursor-pointer" onclick="openModal('/placeholder.svg?height=600&width=800', 'Training Aircraft', 'Cessna 172 used for initial pilot training')">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Training Aircraft" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 hover:opacity-100 transition duration-300"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-semibold">Training Aircraft</h3>
+                            <p class="text-gray-300 text-sm">Cessna 172 trainer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item aircraft cursor-pointer" onclick="openModal('/placeholder.svg?height=600&width=800', 'Commercial Aircraft', 'Boeing 737 used for advanced training')">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Commercial Aircraft" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 hover:opacity-100 transition duration-300"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-semibold">Commercial Aircraft</h3>
+                            <p class="text-gray-300 text-sm">Boeing 737 training</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events -->
+                <div class="gallery-item events cursor-pointer" onclick="openModal('/placeholder.svg?height=600&width=800', 'Aviation Seminar', 'Industry experts sharing knowledge at our annual seminar')">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Aviation Seminar" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 hover:opacity-100 transition duration-300"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-semibold">Aviation Seminar</h3>
+                            <p class="text-gray-300 text-sm">Industry knowledge sharing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item events cursor-pointer" onclick="openModal('/placeholder.svg?height=600&width=800', 'Career Fair', 'Annual career fair connecting students with aviation employers')">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Career Fair" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 hover:opacity-100 transition duration-300"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-semibold">Career Fair</h3>
+                            <p class="text-gray-300 text-sm">Employment opportunities</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graduation -->
+                <div class="gallery-item graduation cursor-pointer" onclick="openModal('/placeholder.svg?height=600&width=800', 'Graduation Ceremony', 'Proud graduates receiving their aviation certifications')">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Graduation Ceremony" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 hover:opacity-100 transition duration-300"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-semibold">Graduation Ceremony</h3>
+                            <p class="text-gray-300 text-sm">Celebrating achievements</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item graduation cursor-pointer" onclick="openModal('/placeholder.svg?height=600&width=800', 'Certificate Presentation', 'Students receiving their professional aviation certificates')">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Certificate Presentation" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 hover:opacity-100 transition duration-300"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-semibold">Certificate Presentation</h3>
+                            <p class="text-gray-300 text-sm">Professional recognition</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item graduation cursor-pointer" onclick="openModal('/placeholder.svg?height=600&width=800', 'Alumni Success', 'Successful alumni sharing their career journey')">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Alumni Success" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-search-plus text-white text-2xl opacity-0 hover:opacity-100 transition duration-300"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-white font-semibold">Alumni Success</h3>
+                            <p class="text-gray-300 text-sm">Career achievements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4">
+        <div class="max-w-4xl max-h-full bg-white rounded-lg overflow-hidden">
+            <div class="relative">
+                <button onclick="closeModal()" class="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 transition duration-300">
+                    <i class="fas fa-times"></i>
+                </button>
+                <img id="modalImage" src="/placeholder.svg" alt="" class="w-full h-auto max-h-96 object-contain">
+                <div class="p-6">
+                    <h3 id="modalTitle" class="text-2xl font-bold text-gray-800 mb-2"></h3>
+                    <p id="modalDescription" class="text-gray-600"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <img src="/placeholder.svg?height=40&width=120" alt="Aero Vista Global" class="h-10 mb-4">
+                    <p class="text-gray-400 mb-4">Leading the future of aviation through innovation, excellence, and global partnerships.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="team.html" class="text-gray-400 hover:text-white transition duration-300">Our Team</a></li>
+                        <li><a href="careers.html" class="text-gray-400 hover:text-white transition duration-300">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Pilot Training</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Aircraft Maintenance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Aviation Consulting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Safety Training</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-envelope mr-2"></i> contact@aerovistaglobal.com</p>
+                        <p><i class="fas fa-phone mr-2"></i> +1 (234) 567-8900</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> Mumbai, India</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2024 Aero Vista Global. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="privacy.html" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Widget -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/1234567890?text=Hello%20Aero%20Vista%20Global,%20I%20would%20like%20to%20know%20more%20about%20your%20services" 
+           target="_blank" 
+           class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition duration-300 flex items-center justify-center">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

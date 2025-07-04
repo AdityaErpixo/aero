@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Aero Vista Global</title>
+    <meta name="description" content="Stay updated with the latest aviation industry news, insights, and educational content from Aero Vista Global experts.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="/placeholder.svg?height=40&width=120" alt="Aero Vista Global Logo" class="h-10">
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 transition duration-300">About</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Services</a>
+                    <a href="team.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Team</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Gallery</a>
+                    <a href="blog.html" class="text-blue-600 font-semibold">Blog</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+                    <a href="careers.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">Careers</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-blue-600">Services</a>
+                <a href="team.html" class="block py-2 text-gray-700 hover:text-blue-600">Team</a>
+                <a href="gallery.html" class="block py-2 text-gray-700 hover:text-blue-600">Gallery</a>
+                <a href="blog.html" class="block py-2 text-blue-600 font-semibold">Blog</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+                <a href="careers.html" class="block py-2 text-gray-700 hover:text-blue-600">Careers</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Aviation Blog</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto">Insights, news, and expert perspectives from the world of aviation</p>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="blog-filter active bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300" data-category="all">All Posts</button>
+                    <button class="blog-filter bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-category="industry-news">Industry News</button>
+                    <button class="blog-filter bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-category="training-tips">Training Tips</button>
+                    <button class="blog-filter bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-category="career-guidance">Career Guidance</button>
+                    <button class="blog-filter bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition duration-300" data-category="technology">Technology</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="pb-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg overflow-hidden shadow-xl">
+                <div class="grid md:grid-cols-2 gap-0">
+                    <div class="p-8 md:p-12 text-white">
+                        <div class="text-sm font-semibold mb-2 opacity-90">FEATURED POST</div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">The Future of Aviation: Sustainable Flying Technologies</h2>
+                        <p class="text-lg mb-6 opacity-90">Explore how electric aircraft, sustainable aviation fuels, and innovative technologies are reshaping the aviation industry for a greener future.</p>
+                        <div class="flex items-center mb-6">
+                            <img src="/placeholder.svg?height=40&width=40" alt="Author" class="w-10 h-10 rounded-full mr-3">
+                            <div>
+                                <div class="font-semibold">Dr. Priya Sharma</div>
+                                <div class="text-sm opacity-75">December 20, 2024</div>
+                            </div>
+                        </div>
+                        <a href="#" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition duration-300">Read Full Article</a>
+                    </div>
+                    <div class="h-64 md:h-auto">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Sustainable Aviation" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="pb-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="blogGrid">
+                <!-- Industry News -->
+                <article class="blog-post industry-news bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="/placeholder.svg?height=200&width=400" alt="Aviation Industry Growth" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">Industry News</span>
+                            <span class="text-gray-500 text-sm">Dec 18, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition duration-300">
+                            <a href="#">Global Aviation Industry Shows Strong Recovery in 2024</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">The aviation industry continues its recovery trajectory with passenger traffic reaching 95% of pre-pandemic levels...</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="/placeholder.svg?height=30&width=30" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Captain Rajesh Kumar</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Training Tips -->
+                <article class="blog-post training-tips bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="/placeholder.svg?height=200&width=400" alt="Flight Training Tips" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm font-semibold">Training Tips</span>
+                            <span class="text-gray-500 text-sm">Dec 15, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition duration-300">
+                            <a href="#">10 Essential Tips for New Pilot Students</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Starting your pilot training journey? Here are the most important tips from experienced instructors to help you succeed...</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="/placeholder.svg?height=30&width=30" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Captain Amit Singh</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Career Guidance -->
+                <article class="blog-post career-guidance bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="/placeholder.svg?height=200&width=400" alt="Aviation Career Path" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-semibold">Career Guidance</span>
+                            <span class="text-gray-500 text-sm">Dec 12, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition duration-300">
+                            <a href="#">Building a Successful Aviation Career: A Complete Guide</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">From choosing the right training program to landing your first job, here's everything you need to know about aviation careers...</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="/placeholder.svg?height=30&width=30" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Ms. Kavya Reddy</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Technology -->
+                <article class="blog-post technology bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="/placeholder.svg?height=200&width=400" alt="Aviation Technology" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Technology</span>
+                            <span class="text-gray-500 text-sm">Dec 10, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition duration-300">
+                            <a href="#">AI and Machine Learning in Modern Aviation</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Discover how artificial intelligence is revolutionizing flight operations, maintenance, and safety in the aviation industry...</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="/placeholder.svg?height=30&width=30" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Dr. Priya Sharma</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Industry News -->
+                <article class="blog-post industry-news bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="/placeholder.svg?height=200&width=400" alt="New Aircraft Models" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">Industry News</span>
+                            <span class="text-gray-500 text-sm">Dec 8, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition duration-300">
+                            <a href="#">Latest Aircraft Models Revolutionizing Commercial Aviation</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Explore the newest aircraft models entering service and how they're changing the landscape of commercial aviation...</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="/placeholder.svg?height=30&width=30" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Engineer Ravi Patel</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Training Tips -->
+                <article class="blog-post training-tips bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="/placeholder.svg?height=200&width=400" alt="Simulator Training" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-sm font-semibold">Training Tips</span>
+                            <span class="text-gray-500 text-sm">Dec 5, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition duration-300">
+                            <a href="#">Maximizing Your Flight Simulator Training Experience</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Learn how to get the most out of your simulator sessions with these expert tips and best practices...</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="/placeholder.svg?height=30&width=30" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Captain Michael Brown</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Career Guidance -->
+                <article class="blog-post career-guidance bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="/placeholder.svg?height=200&width=400" alt="Aviation Jobs" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-semibold">Career Guidance</span>
+                            <span class="text-gray-500 text-sm">Dec 3, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition duration-300">
+                            <a href="#">Top Aviation Jobs in High Demand for 2025</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Discover the most sought-after aviation careers and what qualifications you need to land these positions...</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="/placeholder.svg?height=30&width=30" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Mr. Rohit Mehta</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Technology -->
+                <article class="blog-post technology bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="/placeholder.svg?height=200&width=400" alt="Aviation Safety Technology" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-semibold">Technology</span>
+                            <span class="text-gray-500 text-sm">Dec 1, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition duration-300">
+                            <a href="#">Advanced Safety Systems in Modern Aircraft</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Explore the cutting-edge safety technologies that are making aviation safer than ever before...</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="/placeholder.svg?height=30&width=30" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Captain Lisa Chen</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Industry News -->
+                <article class="blog-post industry-news bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="/placeholder.svg?height=200&width=400" alt="Aviation Regulations" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">Industry News</span>
+                            <span class="text-gray-500 text-sm">Nov 28, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition duration-300">
+                            <a href="#">New Aviation Regulations Coming into Effect in 2025</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Stay informed about the latest regulatory changes affecting pilots, airlines, and aviation professionals...</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="/placeholder.svg?height=30&width=30" alt="Author" class="w-8 h-8 rounded-full mr-2">
+                                <span class="text-sm text-gray-600">Dr. Anita Gupta</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Stay Updated</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Subscribe to our newsletter and never miss the latest aviation insights and industry updates</p>
+            <div class="max-w-md mx-auto">
+                <form class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email address" class="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                    <button type="submit" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition duration-300">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <img src="/placeholder.svg?height=40&width=120" alt="Aero Vista Global" class="h-10 mb-4">
+                    <p class="text-gray-400 mb-4">Leading the future of aviation through innovation, excellence, and global partnerships.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="team.html" class="text-gray-400 hover:text-white transition duration-300">Our Team</a></li>
+                        <li><a href="careers.html" class="text-gray-400 hover:text-white transition duration-300">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Pilot Training</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Aircraft Maintenance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Aviation Consulting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Safety Training</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-envelope mr-2"></i> contact@aerovistaglobal.com</p>
+                        <p><i class="fas fa-phone mr-2"></i> +1 (234) 567-8900</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> Mumbai, India</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2024 Aero Vista Global. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="privacy.html" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Widget -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/1234567890?text=Hello%20Aero%20Vista%20Global,%20I%20would%20like%20to%20know%20more%20about%20your%20services" 
+           target="_blank" 
+           class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition duration-300 flex items-center justify-center">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
